@@ -20,6 +20,6 @@
     
    Путь к csv-файлу с логами необходимо указать в файле congif.py.
    Для запуска веб-приложения необходимо открыть терминал и выполнить команду:
-   - для Windows и Mac: python путь\app.py
-   - для Linux: python3 путь\app.py
+   - для Windows и Mac: python app.py
+   - для Linux: python3 app.py
    - для запуска на виртуально машине: необходимо добавить host в конце app.py - app.run_server(debug=True, host='0.0.0.0') 
