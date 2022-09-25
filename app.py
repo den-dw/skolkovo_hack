@@ -50,7 +50,7 @@ def merge_df(data1, data2):
 
 # сводный даатфрейм
 df = merge_df(merge_df(create_df(froms_tbs, 'count_froms'),create_df(joins_tbs, 'count_joins')),create_df(intos_tbs, 'count_intos'))
-df.count_intos = df.count_intos + 1 #допускаем, что в таблицу изначально были добавлены данные, для этого добавляем 1. Это нужно для наших расчетов.
+df.count_intos = df.count_intos + 1 #допускаем, что в таблицу изначально были добавлены данные, для этого добавляем 1, это нужно для наших расчетов
 # определяем метрику "бесполезности"
 df['useless'] = round(df['count_intos'] / df['count_froms'])
 df.fillna(0, inplace=True)
